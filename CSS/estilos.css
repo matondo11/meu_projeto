@@ -1,4 +1,7 @@
 body{
-    background-image: radial-gradient(#aa00ff,#9e1cafec);
+    background-image: radial-gradient(#af1c8fcc,#aa00ffe5);
     height: 100vh;
+}
+img{
+    width:50%;
 }
