@@ -1,0 +1,23 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding:0;
+}
+@media screen and (min-width:600px) and (max-width:768px){
+    body{
+        background-image: radial-gradient(#db2470c0,#aa00ff);
+    }
+    main{
+        width:90vw;
+        margin:auto;
+        & .menu{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        & .item{
+            flex: auto;
+        }
+    }
+}
