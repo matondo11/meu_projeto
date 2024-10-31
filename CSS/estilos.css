@@ -7,7 +7,7 @@
     --cor1:#db2470c0;
     --cor2:#aa00ff;
 }
-@media screen and (min-width:375px) and (max-width:430px){
+@media screen and (min-width:375px) and (max-width:500px){
     body{
         background-image: radial-gradient(var(--cor1), var(--cor2));
         height:100vh;
