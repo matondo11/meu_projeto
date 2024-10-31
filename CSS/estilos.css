@@ -3,21 +3,113 @@
     margin: 0;
     padding:0;
 }
-@media screen and (min-width:600px) and (max-width:768px){
+:root{
+    --cor1:#db2470c0;
+    --cor2:#aa00ff;
+}
+@media screen and (min-width:375px) and (max-width:430px){
     body{
-        background-image: radial-gradient(#db2470c0,#aa00ff);
+        background-image: radial-gradient(var(--cor1), var(--cor2));
+        height:100vh;
+        padding: 5px;
     }
     main{
-        width:90vw;
-        margin:auto;
-        & .menu{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
-        & .item{
-            flex: auto;
-        }
+        position: relative;
+        
+        height: 100vh;
+        margin: auto;
     }
+    .menu-logo{
+        width:100px;
+        flex:0.8;
+       
+    }
+    .menu{
+        width:50px;
+    }
+    .menu:hover{
+        cursor: pointer;
+    }
+    .menubar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 10px 10px 10px;
+       
+    }
+    .menu-links{
+        display: flex;
+        gap:2rem;
+        display: none;
+        & a{
+            text-decoration: none;
+        }
+
+    }
+    #carro{
+        width:80%;
+        position: absolute;
+        top:18%;
+        left:10%;
+        transform: rotate(-20deg);
+                
+    }
+    .seta{
+        width:5%;
+        padding:5px;
+        border: 2px solid snow;
+        background-color: snow;
+        border-radius: 50px;
+        position: absolute;
+        top:25%;
+        left: 1%;
+        transform: rotate(-180deg);
+    }
+    .seta1{
+        width:5%;
+        padding:5px;
+        border: 2px solid snow;
+        background-color: snow;
+        border-radius: 50%;
+        position: absolute;
+        top:25%;
+        right:1%;
+    }
+    .legenda{
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+        position: absolute;
+        top:5%;
+        right:5%;
+    }
+    p{
+        font-size:2em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: aliceblue;
+        position: absolute;
+        top:40%;
+        left:5%;
+    }
+    .barra{
+        display:flex;
+        justify-content: space-between;
+        width: 100px;
+        position: absolute;
+        top:46%;
+        left:5%;
+    }
+    .nav1,
+    .nav2,
+    .nav3{
+        background-color: rgba(223, 243, 46, 0.849);
+        width:30px;
+        border-radius: 10px;
+        height:5px;
+        display: flex;
+    }
+    .nav1{
+        background-color: white;
+    }
+    
 }

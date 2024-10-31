@@ -7,16 +7,27 @@
     <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" alt="">
-        <nav class="menu">
+    <header class="menubar">
+        <img src="img/logo.png" alt="" class="menu-logo">
+        <img src="img/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="" class="menu" onclick="clicou()">
+        <nav class="menu-links">
             <a href="#" class="item">Home</a>
             <a href="#" class="item">Carro</a>    
             <a href="#" class="item">Contactos</a>
         </nav>
     </header>
     <main>
-        <img src="img/1.png" alt="">
+        <img src="img/1.png" alt="" id="carro">
+        <h1 class="legenda">911 turbo</h1>
+        <img src="img/arrow.png" alt="" class="seta" onclick="voltar()">
+        <img src="img/arrow.png" alt="" class="seta1" onclick="avancar()">
+        <p id="local">01</p>
+        <div class="barra">
+            <div class="nav1"></div>
+            <div class="nav2"></div>
+            <div class="nav3"></div>
+        </div>
+        
     </main>
     <script src="JS/script.js"></script>
 </body>
