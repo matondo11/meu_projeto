@@ -25,10 +25,13 @@
        
     }
     .menu{
-        width:50px;
+        width:10%;
     }
     .menu:hover{
         cursor: pointer;
+        background-color: rgba(128, 115, 115, 0.555);
+        padding: 5px;
+        border-radius:50%;
     }
     .menubar{
         display: flex;
